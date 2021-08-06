@@ -21,7 +21,22 @@
 
 <body style="background-color: #21428e ; color: #98c13d">
 
-<script src="https://lukebluelox.github.io/bttbutton.js"></script>
+<script>
+var btn = $('#bttbutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
 <a id="bttbutton"></a>
 
 <hr class="hr1">
