@@ -7,12 +7,12 @@ def start_vm(request):
     service = discovery.build('compute', 'v1', credentials=credentials)
     
     # Project ID for this request.
-    project = 'scheduled-task-project' # here you project ID name
+    project = 'sars-cov-2-poland' # here you project ID name
     
     # The name of the zone for this request.
-    zone = 'europe-west1-b' # put here your zone
+    zone = 'europe-central2-a' # put here your zone
     
     # Name of the instance resource to stop.
-    instance = 'vm-scheduled' # put here the name of the vm to start
+    instance = 'sars-cov-2-poland' # put here the name of the vm to start
     req = service.instances().start(project=project, zone=zone, instance=instance)
     response = req.execute()
