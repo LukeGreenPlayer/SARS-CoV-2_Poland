@@ -21,7 +21,7 @@ result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="Średnia 7 dni - Zakres 2 tygodnie!B3").execute()
 values = result.get('values', [])
 
-RUN1 = [["={ 'Średnia 7 dni SARS-CoV-2'!H137 }", "={ 'Średnia 7 dni SARS-CoV-2'!I137 }"]]
+RUN1 = [["={ 'Średnia 7 dni SARS-CoV-2'!H154 }", "={ 'Średnia 7 dni SARS-CoV-2'!I154 }"]]
 
 request1 = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                                  range="Średnia 7 dni - Zakres 2 tygodnie!B3", valueInputOption="USER_ENTERED", body={"values":RUN1}).execute()
@@ -31,7 +31,7 @@ result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="Średnia 7 dni - Zakres 4 tygodnie!B3").execute()
 values = result.get('values', [])
 
-RUN2 = [["={ 'Średnia 7 dni SARS-CoV-2'!H122 }", "={ 'Średnia 7 dni SARS-CoV-2'!I122 }"]]
+RUN2 = [["={ 'Średnia 7 dni SARS-CoV-2'!H140 }", "={ 'Średnia 7 dni SARS-CoV-2'!I140 }"]]
 
 request2 = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                                  range="Średnia 7 dni - Zakres 4 tygodnie!B3", valueInputOption="USER_ENTERED", body={"values":RUN2}).execute()
@@ -41,7 +41,7 @@ result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="Prognoza liczby zgonów - 21 dni do przodu!B3").execute()
 values = result.get('values', [])
 
-RUN3 = [["={ 'Średnia 7 dni SARS-CoV-2'!O129 }", "={ 'Średnia 7 dni SARS-CoV-2'!P129 }"]]
+RUN3 = [["={ 'Średnia 7 dni SARS-CoV-2'!O147 }", "={ 'Średnia 7 dni SARS-CoV-2'!P147 }"]]
 
 request3 = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                                  range="Prognoza liczby zgonów - 21 dni do przodu!B3", valueInputOption="USER_ENTERED", body={"values":RUN3}).execute()                                                
