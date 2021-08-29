@@ -22,5 +22,11 @@ request2 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                range="Średnia 7 dni - Zakres 4 tygodnie!B4:C30").execute()
 request3 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID, 
                                range="Prognoza liczby zgonów - 21 dni do przodu!B4:C23").execute()
+request4 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+                               range="Karkonoski!B3:C15").execute()
+request5 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+                               range="Jelenia Góra!B3:C15").execute()
+request6 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+                               range="Jelenia Góra!B3:C15").execute()
 
-print(request1, request2, request3)
+print(request1, request2, request3, request4, request5,request6)
