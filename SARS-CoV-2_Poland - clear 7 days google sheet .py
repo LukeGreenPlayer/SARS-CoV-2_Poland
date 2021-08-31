@@ -44,4 +44,5 @@ request13 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                range="Dzień 6 / 100000!B2:P382").execute()
 request14 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                range="Dzień 7 / 100000!B2:P382").execute()
+
 print(request1, request2, request3, request4, request5, request6, request7,request8, request9, request10, request11, request12, request13, request14)
