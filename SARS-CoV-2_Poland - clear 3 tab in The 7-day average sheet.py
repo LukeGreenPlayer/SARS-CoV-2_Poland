@@ -27,6 +27,6 @@ request4 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
 request5 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                range="Jelenia Góra!B3:C15").execute()
 request6 = sheet.values().clear(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                               range="Jelenia Góra!B3:C15").execute()
+                               range="Dolnośląskie!B3:C15").execute()
 
 print(request1, request2, request3, request4, request5,request6)
