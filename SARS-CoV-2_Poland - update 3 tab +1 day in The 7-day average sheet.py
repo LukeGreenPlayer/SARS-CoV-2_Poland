@@ -46,6 +46,7 @@ RUN3 = [["={ 'Średnia 7 dni SARS-CoV-2'!O150 }", "={ 'Średnia 7 dni SARS-CoV-2
 request3 = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                                  range="Prognoza liczby zgonów - 21 dni do przodu!B3", valueInputOption="USER_ENTERED", body={"values":RUN3}).execute()                                                
 
+
 result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                             range="Karkonoski!B2").execute()
 values = result.get('values', [])
