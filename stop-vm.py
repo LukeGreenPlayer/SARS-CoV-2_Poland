@@ -1,4 +1,4 @@
-def stop_vm(request):
+    def stop_vm(request):
     from pprint import pprint
     from googleapiclient import discovery
     from oauth2client.client import GoogleCredentials
@@ -13,6 +13,6 @@ def stop_vm(request):
     zone = 'europe-central2-a' # put here your zone
     
     # Name of the instance resource to stop.
-    instance = 'sars-cov-2-poland' # put here the name of the vm to start
+    instance = 'vm-ubuntu' # put here the name of the vm to start
     req = service.instances().stop(project=project, zone=zone, instance=instance)
     response = req.execute()
