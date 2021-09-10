@@ -123,3 +123,5 @@ request71 = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSH
                                                  range="Wrocław 28 dni!B2", valueInputOption="USER_ENTERED", body={"values":RUN71}).execute()
 
 print(request1, request2, request3, request4, request41, request5, request51, request6, request61, request7, request71)
+
+# /home/luke_blue_lox/startupscript.sh
